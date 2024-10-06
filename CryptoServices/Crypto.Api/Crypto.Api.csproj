@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Okala.ServiceDefaults\Okala.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Crypto.Api.Discovery\Crypto.Api.Discovery.csproj" />
   </ItemGroup>
 
 </Project>

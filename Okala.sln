@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.CoinMarket", "Crypto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Base", "CryptoServices\Crypto.Base\Crypto.Base.csproj", "{C182C28B-77AC-4FB4-AECD-68D116D4997E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Api.Discovery", "CryptoServices\Crypto.Api.Discovery\Crypto.Api.Discovery.csproj", "{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{C182C28B-77AC-4FB4-AECD-68D116D4997E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C182C28B-77AC-4FB4-AECD-68D116D4997E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C182C28B-77AC-4FB4-AECD-68D116D4997E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{74700684-B3C7-4739-BF29-4AC69E21EE83} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
 		{508A64C2-B650-43F5-8680-7E03416FB19A} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
 		{C182C28B-77AC-4FB4-AECD-68D116D4997E} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
+		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F450CC50-F057-4866-8BB4-4E5CDDE85BD0}

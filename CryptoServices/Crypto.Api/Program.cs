@@ -1,4 +1,6 @@
 
+using Crypto.Api.Discovery;
+
 namespace Crypto.Api
 {
     public class Program
@@ -9,6 +11,7 @@ namespace Crypto.Api
 
             // Add services to the container.
 
+            builder.Services.RegisterCryptoServices();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
