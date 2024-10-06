@@ -1,0 +1,37 @@
+{
+  "id": "d45caafe-4f09-4c27-9e74-ae3d8f6332c1",
+  "template": "app-nolayers",
+  "versions": {
+    "AbpFramework": "8.3.0",
+    "AbpCommercial": "8.3.0",
+    "AbpStudio": "0.8.1"
+  },
+  "modules": {
+    "Okala.Api.App": {
+      "path": "Okala.Api.App.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+        "^/metrics$"
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app-nolayers",
+    "createdAbpStudioVersion": "0.8.1",
+    "uiFramework": "no-ui",
+    "databaseProvider": "ef",
+    "databaseManagementSystem": "postgresql",
+    "theme": "basic",
+    "themeStyle": "",
+    "publicWebsite": "",
+    "socialLogin": ""
+  }
+}

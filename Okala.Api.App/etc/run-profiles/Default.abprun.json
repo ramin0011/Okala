@@ -1,0 +1,9 @@
+﻿{
+  "applications": {
+    "Okala.Api.App": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44336",
+      "path": "../../Okala.Api.App/Okala.Api.App.csproj"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "production": true,
+  "application": {
+    "baseUrl":"http://localhost:4200",
+    "name": "App",
+    "logoUrl": ""
+  },
+  "oAuthConfig": {
+    "issuer": "https://localhost:44336",
+    "redirectUri": "https://localhost:44336",
+    "clientId": "App_App",
+    "responseType": "code",
+    "scope": "offline_access openid profile email phone App"
+  },
+  "apis": {
+    "default": {
+      "url": "https://localhost:44336",
+      "rootNamespace": "App"
+    }
+  }
+}
