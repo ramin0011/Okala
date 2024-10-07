@@ -1,11 +1,10 @@
 using System.Net;
-using System.Runtime.CompilerServices;
 
 namespace Crypto.Base.Helpers;
 
 public class ApiEnpointBuilderBase
 {
-    private readonly string BaseUrl = "https://api.exchangeratesapi.io/v1/latest";
+    private readonly string BaseUrl ;
     private Dictionary<string,string> QueryStrings = new();
 
     protected ApiEnpointBuilderBase(string baseUrl)
@@ -24,7 +23,7 @@ public class ApiEnpointBuilderBase
         return this;
     }
     
-    public string BuildUrl()
+    public virtual string BuildUrl()
     {
         if (QueryStrings.Count == 0)
         {

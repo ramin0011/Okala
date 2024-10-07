@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Base", "CryptoServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Api.Discovery", "CryptoServices\Crypto.Api.Discovery\Crypto.Api.Discovery.csproj", "{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Shared", "CryptoServices\Crypto.Shared\Crypto.Shared.csproj", "{C7C2A9AE-D805-46F5-B31B-D85F9C634B3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C2A9AE-D805-46F5-B31B-D85F9C634B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C2A9AE-D805-46F5-B31B-D85F9C634B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C2A9AE-D805-46F5-B31B-D85F9C634B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C2A9AE-D805-46F5-B31B-D85F9C634B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{508A64C2-B650-43F5-8680-7E03416FB19A} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
 		{C182C28B-77AC-4FB4-AECD-68D116D4997E} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
 		{6B6E36BB-66EA-41B9-8B62-E180071CE0BF} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
+		{C7C2A9AE-D805-46F5-B31B-D85F9C634B3C} = {04DB5B1E-88A2-4B7A-B359-436ADF560D1E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F450CC50-F057-4866-8BB4-4E5CDDE85BD0}

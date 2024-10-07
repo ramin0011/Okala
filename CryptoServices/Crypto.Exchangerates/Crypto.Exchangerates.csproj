@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Crypto.Base\Crypto.Base.csproj" />
+    <ProjectReference Include="..\Crypto.Shared\Crypto.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -6,5 +6,5 @@ namespace Crypto.Base.Services;
 public interface ICryptoQuoteService
 {
     ProviderType Type { get; set; }
-    Task<CryptoQuote> GetQuotes(RequestModel request);
+    Task<ResponseModel<CryptoQuote>> GetQuotes(RequestModel request);
 }

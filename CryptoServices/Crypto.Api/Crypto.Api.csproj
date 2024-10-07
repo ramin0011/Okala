@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Okala.ServiceDefaults\Okala.ServiceDefaults.csproj" />
     <ProjectReference Include="..\Crypto.Api.Discovery\Crypto.Api.Discovery.csproj" />
+    <ProjectReference Include="..\Crypto.Shared\Crypto.Shared.csproj" />
   </ItemGroup>
 
 </Project>
