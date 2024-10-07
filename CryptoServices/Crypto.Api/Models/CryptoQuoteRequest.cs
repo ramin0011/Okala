@@ -5,5 +5,4 @@ namespace Crypto.Api.Models;
 public class CryptoQuoteRequest
 {
     public string Code { get; set; }
-    public string[] AskedCodes { get; set; }
 }

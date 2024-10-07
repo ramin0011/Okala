@@ -15,7 +15,7 @@ namespace Crypto.Api.Controllers
         public Task<ResponseModel<CryptoQuote>> Post(CryptoQuoteRequest request)
         {
             var cryptoService = services.FindCryptoService(ProviderType.ExchangeRate);
-            var requestModel = new RequestModel(){CryptoCode = request.Code,AskCodes = request.AskedCodes};
+            var requestModel = new RequestModel(){CryptoCode = request.Code};
             return cryptoService.GetQuotes(requestModel);
         }
     }

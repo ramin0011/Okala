@@ -18,9 +18,6 @@ public class CryptoQuoteRequestValidator:AbstractValidator<CryptoQuoteRequest>
                 .NotEmpty().WithMessage("Crypto code is required.")
                 .Matches(@"^[A-Za-z]{3}$").WithMessage("Crypto code must be exactly three letters.");
         }
-    
-        
-        RuleFor(x => x.AskedCodes).NotNull()
-            .NotEmpty().WithMessage("Specify Asked Codes Array.!");
+   
     }
 }
