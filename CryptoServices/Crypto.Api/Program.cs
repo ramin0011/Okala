@@ -1,7 +1,9 @@
 
 using Crypto.Api.Discovery;
 using AutoMapper;
+using Crypto.Api.Validations;
 using Crypto.Shared.Configurations;
+using FluentValidation.AspNetCore;
 
 namespace Crypto.Api
 {
@@ -14,7 +16,8 @@ namespace Crypto.Api
             // Add services to the container.
             builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.RegisterCryptoServices();
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddFluentValidation(a => a.RegisterValidatorsFromAssemblyContaining<Program>());;
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
