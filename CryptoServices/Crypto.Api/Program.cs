@@ -12,6 +12,7 @@ namespace Crypto.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.AddServiceDefaults();
 
             // Add services to the container.
             builder.Services.AddAutoMapper(typeof(Program));
@@ -25,6 +26,8 @@ namespace Crypto.Api
             ConfigureSettings(builder);
             
             var app = builder.Build();
+            
+            app.MapDefaultEndpoints();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
