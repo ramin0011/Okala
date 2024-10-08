@@ -4,8 +4,11 @@ This App is developed using different technologies, and its all based on dotnet 
 so to start the App you need to run the Okala.AppHost project
 
 before running the project check the connection string :\Okala.Api.App\Okala.Api.App\appsettings.json
+
 to login in swagger :username:admin password:1q2w3E*
+
 ps:the unit tests are located in:\CryptoServices\Crypto.Tests
+
 ps: the project has three main sections : dotnet aspire , crypto services , app services all in their own folder
 
 ### Technical Questions
