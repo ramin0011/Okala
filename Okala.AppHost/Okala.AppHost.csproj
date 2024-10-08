@@ -12,7 +12,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CryptoServices\Crypto.Api\Crypto.Api.csproj" />
     <ProjectReference Include="..\Okala.Api.App\Okala.Api.App\Okala.Api.App.csproj" />
-    <ProjectReference Include="..\Okala.Web\Okala.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

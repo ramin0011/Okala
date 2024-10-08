@@ -6,8 +6,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Okala.AppHost", "Okala.AppH
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Okala.ServiceDefaults", "Okala.ServiceDefaults\Okala.ServiceDefaults.csproj", "{E668DEE2-AC28-4D1D-83B7-52BD08A1850C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Okala.Web", "Okala.Web\Okala.Web.csproj", "{E7A93524-E78A-4313-AC21-1F457F218866}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Okala.Tests", "Okala.Tests\Okala.Tests.csproj", "{5B53BED9-99B6-4EEE-B413-9B8D77108BF0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Okala.Api.App", "Okala.Api.App\Okala.Api.App\Okala.Api.App.csproj", "{32D1CF84-E0F0-4C23-84BE-2BAB66953DA6}"
@@ -46,10 +44,6 @@ Global
 		{E668DEE2-AC28-4D1D-83B7-52BD08A1850C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E668DEE2-AC28-4D1D-83B7-52BD08A1850C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E668DEE2-AC28-4D1D-83B7-52BD08A1850C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7A93524-E78A-4313-AC21-1F457F218866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7A93524-E78A-4313-AC21-1F457F218866}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7A93524-E78A-4313-AC21-1F457F218866}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7A93524-E78A-4313-AC21-1F457F218866}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B53BED9-99B6-4EEE-B413-9B8D77108BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B53BED9-99B6-4EEE-B413-9B8D77108BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B53BED9-99B6-4EEE-B413-9B8D77108BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
