@@ -6,11 +6,11 @@ using Volo.Abp.Ui.Branding;
 namespace Okala.Api.App;
 
 [Dependency(ReplaceServices = true)]
-public class AppBrandingProvider : DefaultBrandingProvider
+public class AppInfo : DefaultBrandingProvider
 {
     private IStringLocalizer<AppResource> _localizer;
 
-    public AppBrandingProvider(IStringLocalizer<AppResource> localizer)
+    public AppInfo(IStringLocalizer<AppResource> localizer)
     {
         _localizer = localizer;
     }
