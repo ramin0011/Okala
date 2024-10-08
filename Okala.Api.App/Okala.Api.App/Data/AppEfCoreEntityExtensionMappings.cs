@@ -8,8 +8,6 @@ public static class AppEfCoreEntityExtensionMappings
 
     public static void Configure()
     {
-        AppGlobalFeatureConfigurator.Configure();
-        AppModuleExtensionConfigurator.Configure();
 
         OneTimeRunner.Run(() =>
         {

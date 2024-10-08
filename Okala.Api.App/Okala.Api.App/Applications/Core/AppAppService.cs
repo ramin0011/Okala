@@ -1,9 +1,8 @@
-using Volo.Abp.Application.Services;
 using Okala.Api.App.Localization;
+using Volo.Abp.Application.Services;
 
-namespace Okala.Api.App.Services;
+namespace Okala.Api.App.Applications.Core;
 
-/* Inherit your application services from this class. */
 public abstract class AppAppService : ApplicationService
 {
     protected AppAppService()

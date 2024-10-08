@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Okala.Api.App.Data;
 using Okala.Api.App.Localization;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using OpenIddict.Validation.AspNetCore;
 using Volo.Abp;
-using Volo.Abp.Uow;
 using Volo.Abp.Account;
 using Volo.Abp.Account.Web;
 using Volo.Abp.AspNetCore.Mvc;
@@ -18,7 +18,6 @@ using Volo.Abp.SettingManagement;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.Bundling;
 using Volo.Abp.AspNetCore.Serilog;
-using Volo.Abp.AuditLogging;
 using Volo.Abp.Autofac;
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Caching;
@@ -32,7 +31,6 @@ using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.PermissionManagement.HttpApi;
 using Volo.Abp.PermissionManagement.Identity;
-using Volo.Abp.SettingManagement;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.Validation.Localization;
@@ -146,8 +144,6 @@ public class AppModule : AbpModule
             });
         }
 
-        AppGlobalFeatureConfigurator.Configure();
-        AppModuleExtensionConfigurator.Configure();
         AppEfCoreEntityExtensionMappings.Configure();
     }
 
@@ -216,8 +212,6 @@ public class AppModule : AbpModule
             options.Applications["MVC"].RootUrl = configuration["App:SelfUrl"];
             options.RedirectAllowedUrls.AddRange(configuration["App:RedirectAllowedUrls"]?.Split(',') ?? Array.Empty<string>());
 
-            options.Applications["Angular"].RootUrl = configuration["App:ClientUrl"];
-            options.Applications["Angular"].Urls[AccountUrlNames.PasswordReset] = "account/reset-password";
         });
     }
 
@@ -233,24 +227,7 @@ public class AppModule : AbpModule
             options.DefaultResourceType = typeof(AppResource);
 
             options.Languages.Add(new LanguageInfo("en", "en", "English"));
-            options.Languages.Add(new LanguageInfo("tr", "tr", "Türkçe"));
-            options.Languages.Add(new LanguageInfo("ar", "ar", "العربية"));
-            options.Languages.Add(new LanguageInfo("cs", "cs", "Čeština"));
-            options.Languages.Add(new LanguageInfo("en-GB", "en-GB", "English (UK)"));
-            options.Languages.Add(new LanguageInfo("hu", "hu", "Magyar"));
-            options.Languages.Add(new LanguageInfo("fi", "fi", "Finnish"));
-            options.Languages.Add(new LanguageInfo("fr", "fr", "Français"));
-            options.Languages.Add(new LanguageInfo("hi", "hi", "Hindi"));
-            options.Languages.Add(new LanguageInfo("is", "is", "Icelandic"));
-            options.Languages.Add(new LanguageInfo("it", "it", "Italiano"));
-            options.Languages.Add(new LanguageInfo("pt-BR", "pt-BR", "Português"));
-            options.Languages.Add(new LanguageInfo("ro-RO", "ro-RO", "Română"));
-            options.Languages.Add(new LanguageInfo("ru", "ru", "Русский"));
-            options.Languages.Add(new LanguageInfo("sk", "sk", "Slovak"));
-            options.Languages.Add(new LanguageInfo("zh-Hans", "zh-Hans", "简体中文"));
-            options.Languages.Add(new LanguageInfo("zh-Hant", "zh-Hant", "繁體中文"));
-            options.Languages.Add(new LanguageInfo("de-DE", "de-DE", "Deutsch"));
-            options.Languages.Add(new LanguageInfo("es", "es", "Español"));
+
         });
 
         Configure<AbpExceptionLocalizationOptions>(options =>
@@ -351,6 +328,9 @@ public class AppModule : AbpModule
         {
             options.Configure(configurationContext =>
             {
+                //*****
+                //**DEAR REVIEWER: I just added in-memory db, so you can test the project easier ;)
+                //configurationContext.DbContextOptions.UseInMemoryDatabase("OKALA");
                 configurationContext.UseNpgsql();
             });
         });

@@ -15,8 +15,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "app-api",
-      "applicationUrl": "https://localhost:7414;http://localhost:44336",
+      "launchUrl": "",
+      "applicationUrl": "https://localhost:44336",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPIRE_ALLOW_UNSECURED_TRANSPORT": "true"
